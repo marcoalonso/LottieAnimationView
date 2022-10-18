@@ -10,19 +10,42 @@ import Lottie
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var onboardingAnimation: AnimationView!
+    
+    
+    @IBOutlet weak var mapNav: AnimationView!
+    @IBOutlet weak var wordlAnimation: AnimationView!
+    
+    
     let animationView = AnimationView()
     
+    
+    
     var namesAnimations = ["clouds", "mapnav", "mappin", "area", "location", "world"]
-
+    var number = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let wichAnimation = Int.random(in: 0..<6)
-        setupAnimation(index: wichAnimation)
+        onboardingAnimation.contentMode = .scaleAspectFit
+        onboardingAnimation.loopMode = .loop
         
-        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(changeAnimation), userInfo: nil, repeats: false)
+        wordlAnimation.loopMode = .playOnce
+        wordlAnimation.contentMode = .scaleAspectFit
         
+        mapNav.loopMode = .autoReverse
+        mapNav.contentMode = .scaleToFill
         
+        mapNav.play()
+        wordlAnimation.play()
+        onboardingAnimation.play()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        //random pictures
+//        let wichAnimation = Int.random(in: 0..<6)
+//        setupAnimation(index: wichAnimation)
+//        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(changeScreen), userInfo: nil, repeats: false)
     }
     
     @objc func changeAnimation() {
@@ -33,7 +56,7 @@ class ViewController: UIViewController {
     @objc func changeScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        vc.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .automatic
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true)
     }

@@ -16,13 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwy-3h-DwX" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="30" y="87" width="330" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="75N-cD-jcg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="area"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bil-oo-dYf" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="30" y="277" width="330" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="OZa-Ac-I4S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="world"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8i-5P-f5z" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="30" y="467" width="330" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Jsh-40-s6d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="mapnav"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gwy-3h-DwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="28X-CX-bu1"/>
+                            <constraint firstItem="Bil-oo-dYf" firstAttribute="top" secondItem="Gwy-3h-DwX" secondAttribute="bottom" constant="30" id="3Iu-Kp-HAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwy-3h-DwX" secondAttribute="trailing" constant="30" id="5Lj-VO-Ufp"/>
+                            <constraint firstItem="Bil-oo-dYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Fs8-5Q-JcN"/>
+                            <constraint firstItem="K8i-5P-f5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Q9l-l4-8Lz"/>
+                            <constraint firstItem="Gwy-3h-DwX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="al6-hY-7In"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bil-oo-dYf" secondAttribute="trailing" constant="30" id="fHw-R5-Foi"/>
+                            <constraint firstItem="K8i-5P-f5z" firstAttribute="top" secondItem="Bil-oo-dYf" secondAttribute="bottom" constant="30" id="fgU-lx-ifV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K8i-5P-f5z" secondAttribute="trailing" constant="30" id="hgw-a0-Yiz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapNav" destination="K8i-5P-f5z" id="3EE-LD-cxj"/>
+                        <outlet property="onboardingAnimation" destination="Gwy-3h-DwX" id="86G-hs-bPj"/>
+                        <outlet property="wordlAnimation" destination="Bil-oo-dYf" id="nO5-LM-xwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11" y="-17"/>
+            <point key="canvasLocation" x="10.769230769230768" y="-17.061611374407583"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="76L-RY-IFl">
