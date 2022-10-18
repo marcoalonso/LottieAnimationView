@@ -34,13 +34,21 @@ class ViewController: UIViewController {
         wordlAnimation.contentMode = .scaleAspectFit
         
         mapNav.loopMode = .autoReverse
-        mapNav.contentMode = .scaleToFill
+        mapNav.contentMode = .scaleAspectFit
         
         mapNav.play()
         wordlAnimation.play()
         onboardingAnimation.play()
         
+        //gesture
+        mapNav.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeScreen)))
+        
     }
+    
+    @objc func didTapImage(){
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         //random pictures
 //        let wichAnimation = Int.random(in: 0..<6)
