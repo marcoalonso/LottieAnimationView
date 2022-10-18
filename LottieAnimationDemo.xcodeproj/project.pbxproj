@@ -16,6 +16,10 @@
 		60F4931D28FF043B0007A508 /* clouds.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4931A28FF043B0007A508 /* clouds.json */; };
 		60F4931E28FF043B0007A508 /* mapnav.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4931B28FF043B0007A508 /* mapnav.json */; };
 		60F4931F28FF043B0007A508 /* mappin.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4931C28FF043B0007A508 /* mappin.json */; };
+		60F4932128FF06200007A508 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F4932028FF06200007A508 /* HomeViewController.swift */; };
+		60F4932528FF081A0007A508 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4932228FF081A0007A508 /* location.json */; };
+		60F4932628FF081A0007A508 /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4932328FF081A0007A508 /* area.json */; };
+		60F4932728FF081A0007A508 /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 60F4932428FF081A0007A508 /* world.json */; };
 		67B62DF64FE1DD353EF287AA /* Pods_LottieAnimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CBAE83179C3F3B03FA75F1 /* Pods_LottieAnimationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		60F4931A28FF043B0007A508 /* clouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds.json; sourceTree = "<group>"; };
 		60F4931B28FF043B0007A508 /* mapnav.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapnav.json; sourceTree = "<group>"; };
 		60F4931C28FF043B0007A508 /* mappin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mappin.json; sourceTree = "<group>"; };
+		60F4932028FF06200007A508 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		60F4932228FF081A0007A508 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		60F4932328FF081A0007A508 /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		60F4932428FF081A0007A508 /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = world.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,9 @@
 				60F4930628FF00AE0007A508 /* AppDelegate.swift */,
 				60F4931A28FF043B0007A508 /* clouds.json */,
 				60F4931B28FF043B0007A508 /* mapnav.json */,
+				60F4932328FF081A0007A508 /* area.json */,
+				60F4932228FF081A0007A508 /* location.json */,
+				60F4932428FF081A0007A508 /* world.json */,
 				60F4931C28FF043B0007A508 /* mappin.json */,
 				60F4930828FF00AE0007A508 /* SceneDelegate.swift */,
 				60F4930A28FF00AE0007A508 /* ViewController.swift */,
@@ -87,6 +98,7 @@
 				60F4930F28FF00B00007A508 /* Assets.xcassets */,
 				60F4931128FF00B00007A508 /* LaunchScreen.storyboard */,
 				60F4931428FF00B00007A508 /* Info.plist */,
+				60F4932028FF06200007A508 /* HomeViewController.swift */,
 			);
 			path = LottieAnimationDemo;
 			sourceTree = "<group>";
@@ -161,6 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F4931F28FF043B0007A508 /* mappin.json in Resources */,
+				60F4932528FF081A0007A508 /* location.json in Resources */,
+				60F4932628FF081A0007A508 /* area.json in Resources */,
+				60F4932728FF081A0007A508 /* world.json in Resources */,
 				60F4931328FF00B00007A508 /* LaunchScreen.storyboard in Resources */,
 				60F4931D28FF043B0007A508 /* clouds.json in Resources */,
 				60F4931028FF00B00007A508 /* Assets.xcassets in Resources */,
@@ -221,6 +236,7 @@
 				60F4930B28FF00AE0007A508 /* ViewController.swift in Sources */,
 				60F4930728FF00AE0007A508 /* AppDelegate.swift in Sources */,
 				60F4930928FF00AE0007A508 /* SceneDelegate.swift in Sources */,
+				60F4932128FF06200007A508 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
